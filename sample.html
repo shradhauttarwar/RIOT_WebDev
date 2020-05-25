@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><img src="sample_logo.png" alt="test logo image" style="height: 100% ; width: 100%; object-fit: contain" \>
+      <b>
+        <b>
+          <center> XXX
+        </b>
+    </h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="sample.html" class="w3-bar-item w3-button">Home</a>
+    <a href="coming_soon.html" class="w3-bar-item w3-button">American League</a>
+    <a href="detail_numbers.html" class="w3-bar-item w3-button">Number Explanation</a>
+    <a href="detail_calc.html" class="w3-bar-item w3-button">RIOT Basketball</a>
+    <a href="coming_soon.html" class="w3-bar-item w3-button">Problem Explanation</a>
+    <a href="coming_soon.html" class="w3-bar-item w3-button">Frequently Asked Questions</a>
+    <a href="coming_soon.html" class="w3-bar-item w3-button">RIOT Basketball</a>
+    <a href="https://sports.yahoo.com/" class="w3-bar-item w3-button">Yahoo Sports</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
+</nav>
+
+<!-- Top menu on small screens
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">XXXX</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+-->
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left" style="font-size:40px;">Better than Magic Numbers!</p>
+    <br>
+    <br>
+    <br>
+    <br>
+      <p>
+      <center> Welcome to the RIOT baseball pages! </center>
+      </p>
+      <p style="font-size:18px;">
+        We provide detailed standings
+        for Major League Baseball with new, informative statistics that allow
+        fans to track how well their teams are performing.
+      </p>
+      <p style="font-size:18px;">
+        For those new to the site, here's what we do:
+        SUMMARY:
+      </p>
+        <ol style="font-size:18px;">
+          <li style="color:blue;">item 1
+          <li style="color:blue;">item 2
+          <li style="color:blue;">item 3
+          <li style="color:blue;">item 4
+        </ol>
+      <p style="font-size:18px;">
+        SAMPLE INFORMATION XXXXX <a href="detail_numbers.html">sample numbers link in paragraph</a>
+        ........   XXXXX ........  <a href="detail_calc.html">sample calculation link in paragraph</a> XXXXX ........
+      </p>
+      <p style="font-size:12px;">
+        SAMPLE FOOTER - CONCLUSION STATEMENT
+      </p>
+  </header>
+
+  <!-- Image header -->
+
+  <!-- Footer -->
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+
+<script>
+// Accordion
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
